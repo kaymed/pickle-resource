@@ -26,7 +26,7 @@ function Header() {
                  </Typography.h1>
               <div className='pr-[250px] pl-[250px] text-center'>
                  <p className='text-2xl'>Just joined the pickleball craze and want to advance your skills? 
-                    Look no further!<br /> Use the guide below to find your next best tool to add to your arsenal.
+                    Look no further! Use the guide below to find your next best tool to add to your arsenal.
                     </p>
                      </div>
 

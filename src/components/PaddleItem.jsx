@@ -36,7 +36,7 @@ function PaddleItem({ src, h3, p }) {
                 horizontal: 'end',
                 vertical: 'top'
               }} alignOffset={{
-                y: 375
+                y: 250
               }} positionMode="absolute" onClick={handleClick} />
 
 
