@@ -20,9 +20,9 @@ const App = () => {
   return <div>
     <div className='m-[20px]'>
             <Typography.h3>
-              Build Your List
+              Keep track of your list
               </Typography.h3><p>
-              Remove any items that you've added to your list, to keep track of what you need to go and purchase.</p>
+              As you go through this guide, check off the items so you know what you are ready to purchase.</p>
               </div>
 
             <ChipList 
