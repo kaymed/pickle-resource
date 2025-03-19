@@ -1,5 +1,6 @@
 import React from 'react';
 import './custom.css';
+import { GiPickle } from "react-icons/gi";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Paddles from './sections/Paddles';
@@ -22,8 +23,11 @@ function App() {
   return (
   <>
   <div className={`${isDarkMode ? "dark" : ""}`}>    
-  <div className='p-[10px] header-top'>
-
+  <div className='p-[10px] header-top flex justify-center'>
+<div className='logo flex m-[10px]'>
+<GiPickle />
+<span className='text-2xl  font-bold text-gray-900'>Pickle-Resource</span>
+</div>
 <Button 
   togglable={true} 
   selected={isDarkMode} 
@@ -41,6 +45,7 @@ function App() {
           <Header/>
   <BrowserRouter>
   <div className='main-content'>
+
         <DrawerContainer>
             <Routes>
             <Route path="/" element={<Paddles />} />

@@ -4,11 +4,20 @@ import Profile from '../components/Profile'
 import { Typography } from '@progress/kendo-react-common';
 import { StackLayout } from '@progress/kendo-react-layout';
 
+import { motion } from "motion/react"
+
 function Header() {
         
   return (
     <>
-    
+    <motion.div 
+    initial={{ 
+      transform: "translateY(-20px)",
+      opacity: 0
+
+     }}
+    animate={{ transform: "translateY(0px)", opacity: 1 }}
+    transition={{ type: "spring" }}>
     <div className='text-center mt-[30px]'>
     <StackLayout orientation="vertical" align={{
             vertical: 'top'
@@ -35,7 +44,7 @@ function Header() {
             </StackLayout>
          
      </div>
-      
+      </motion.div>
      
     </>
 

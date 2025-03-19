@@ -5,6 +5,9 @@ import { Button } from '@progress/kendo-react-buttons';
 
 import { pencilIcon, heartIcon, thumbUpIcon, menuIcon, calendarIcon, chevronDownIcon, chevronRightIcon } from '@progress/kendo-svg-icons';
 import { SvgIcon } from '@progress/kendo-react-common';
+import { motion } from "motion/react"
+
+
 const CustomItem = props => {
   const {
     visible,
@@ -90,7 +93,18 @@ const DrawerContainer = props => {
     }
     return item;
   });
-  return <div><div className='draw-wrapper'>
+  return <div> 
+    <motion.div 
+        initial={{ 
+          transform: "translateY(-20px)",
+          opacity: 0
+          
+    
+         }}
+        animate={{ transform: "translateY(0px)", opacity: 1 }}
+        transition={{ type: "spring", delay: .75 }}>
+  
+  <div className='draw-wrapper'>
             <div className="custom-toolbar">
                 <Button svgIcon={menuIcon} fillMode="flat" onClick={handleClick} />
                 <span className="title">Make your selection</span>
@@ -104,6 +118,6 @@ const DrawerContainer = props => {
             >
                 <DrawerContent>{props.children}</DrawerContent>
             </Drawer>
-            </div></div>;
+            </div></motion.div></div>;
 };
 export default DrawerContainer;
