@@ -27,6 +27,7 @@ function App() {
 <div className='logo flex m-[10px]'>
 <GiPickle />
 <span className='text-2xl  font-bold text-gray-900'>Pickle-Resource</span>
+<span className='mr-[20px] ml-[20px] element'>|</span>
 </div>
 <Button 
   togglable={true} 

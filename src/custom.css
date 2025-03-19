@@ -1,3 +1,13 @@
+.logo svg {
+    font-size: 30px;
+    color: rgb(45, 112, 45);
+    margin: 0 5px;
+}
+
+.logo span.element {
+    font-size: 20px;
+}
+
 .draw-wrapper {
     margin: 50px;
     border: 1px solid gray;
