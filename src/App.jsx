@@ -22,7 +22,7 @@ function App() {
   return (
   <>
   <div className={`${isDarkMode ? "dark" : ""}`}>    
-  <div className='p-[10px]'>
+  <div className='p-[10px] header-top'>
 
 <Button 
   togglable={true} 

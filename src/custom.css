@@ -125,3 +125,7 @@
 .k-card-body {
     border-top: 1px solid rgb(197, 197, 197) !important;
 }
+
+.header-top {
+    border-bottom: 1px solid rgb(198, 198, 198);
+}

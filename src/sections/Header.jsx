@@ -9,7 +9,7 @@ function Header() {
   return (
     <>
     
-    <div className='text-center'>
+    <div className='text-center mt-[30px]'>
     <StackLayout orientation="vertical" align={{
             vertical: 'top'
           }}>
