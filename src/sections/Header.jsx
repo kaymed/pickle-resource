@@ -30,16 +30,16 @@ function Header() {
               height: 200
             }}>
 
-                <Typography.h1>
-                 Want to up your Pickleball game?
-                 </Typography.h1>
-              <div className='pr-[250px] pl-[250px] text-center'>
+                <h1 className='font-[Mouse_Memoirs] text-8xl'>
+                 Get started in pickleball today!
+                 </h1>
+              <div className='pr-[250px] pl-[250px] pt-[20px] text-center'>
                  <p className='text-2xl'>Just joined the pickleball craze and want to advance your skills? 
                     Look no further! Use the guide below to find your next best tool to add to your arsenal.
                     </p>
                      </div>
 
-                     <div> <Profile /></div>
+                    
                 </StackLayout>
             </StackLayout>
          

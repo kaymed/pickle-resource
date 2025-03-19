@@ -1,17 +1,14 @@
 import React from 'react';
 import './custom.css';
-import { GiPickle } from "react-icons/gi";
+import '@progress/kendo-theme-default/dist/all.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavBar from './sections/NavBar'
 import Paddles from './sections/Paddles';
 import Coaches from './sections/Coaches';
 import Reviews from './sections/Reviews';
 import Tournaments from './sections/Tournaments';
 import DrawerContainer from './sections/DrawerContainer';
-
-import { Button } from "@progress/kendo-react-buttons";
-import { SvgIcon } from '@progress/kendo-react-common';
-import { brightnessContrastIcon } from '@progress/kendo-svg-icons';
 
 import Header from './sections/Header';
 import Footer from './sections/Footer';
@@ -23,25 +20,7 @@ function App() {
   return (
   <>
   <div className={`${isDarkMode ? "dark" : ""}`}>    
-  <div className='p-[10px] header-top flex justify-center'>
-<div className='logo flex m-[10px]'>
-<GiPickle />
-<span className='text-2xl  font-bold text-gray-900'>Pickle-Resource</span>
-<span className='mr-[20px] ml-[20px] element'>|</span>
-</div>
-<Button 
-  togglable={true} 
-  selected={isDarkMode} 
-  onClick={() => setIsDarkMode(!isDarkMode)} 
-  themeColor={isDarkMode ? 'dark' : 'light'}>
-    <SvgIcon 
-      icon={brightnessContrastIcon}  /> 
-                  {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-              </Button>
-              
-             
-              </div>
-              </div>
+    <NavBar />
           <div className={`${isDarkMode ? "dark" : ""}`}> 
           <Header/>
   <BrowserRouter>
@@ -59,7 +38,7 @@ function App() {
         </BrowserRouter>
        
         </div>
-
+</div>
         <Footer />
         </>
         )
