@@ -1,23 +1,21 @@
-
 .logo svg {
-    font-size: 30px;
-    color: rgb(45, 112, 45);
-    margin: 5px;
+  font-size: 30px;
+  color: rgb(45, 112, 45);
+  margin: 5px;
 }
 
-
 .draw-wrapper {
-    margin: 50px;
-    border: 1px solid gray;
+  margin: 50px;
+  border: 1px solid gray;
 }
 
 .dark .k-drawer-content,
 .dark .custom-toolbar {
-    background-color: #232947;
+  background-color: #232947;
 }
 
 .dark .k-drawer {
-    background-color: #293677;
+  background-color: #293677;
 }
 
 .dark .k-h4,
@@ -26,114 +24,119 @@
 .dark .custom-toolbar,
 .dark .k-drawer-item .k-item-text,
 .dark .k-h5 {
-    color: #fff;
+  color: #fff;
 }
 
 .dark .k-drawer-separator {
-    background-color: #656565;
+  background-color: #656565;
 }
 
 .dark .k-card-body p,
 .dark .k-step-list-horizontal .k-step-label {
-    color: #fff;
+  color: #fff;
 }
 
 .dark .k-card-header,
 .dark .k-card {
-    border-color: #a5a5a5 !important;
+  border-color: #a5a5a5 !important;
 }
 
 .dark .k-card {
-    background-color: #232947;
+  background-color: #232947;
 }
 
 .main-content {
-    margin-top: 130px;
+  margin-top: 130px;
 }
 
 .k-chip-solid-base.k-selected {
-    background-color: rgb(188, 225, 188) !important;
+  background-color: rgb(188, 225, 188) !important;
 }
 
 .title {
-    margin-left: 20px;
-    font-weight: bold;
-    font-size: 21px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 21px;
 }
 .custom-toolbar {
-    width: 100%;
-    background-color: #f6f6f6;
-    line-height: 10px;
-    border-bottom: inset;
-    border-bottom-width: 1px;
-    padding: 10px;
-    color: #656565;
+  width: 100%;
+  background-color: #f6f6f6;
+  line-height: 10px;
+  border-bottom: inset;
+  border-bottom-width: 1px;
+  padding: 10px;
+  color: #656565;
 }
 
 .emoji-stepper .emoji {
-    height: 100%;
-    line-height: 30px;
-    font-size: 24px;
+  height: 100%;
+  line-height: 30px;
+  font-size: 24px;
 }
 .custom-stepper .k-progressbar {
-    height: 4px;
-    top: 18px;
+  height: 4px;
+  top: 18px;
 }
 
 .custom-stepper .k-progressbar .k-selected {
-    background: linear-gradient(to right, #ffc837, #ff8008);
+  background: linear-gradient(to right, #ffc837, #ff8008);
 }
 
 .custom-step {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #ff8008;
-    border-radius: 10px;
-    background-clip: padding-box;
-    border-radius: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ff8008;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
 }
 
 .k-step-done .custom-step {
-    background-image: radial-gradient(circle at center, #ffC837 10px, #ff8008);
+  background-image: radial-gradient(circle at center, #ffc837 10px, #ff8008);
 }
 
 .k-step:not(.k-step-done):not(.k-step-current) .custom-step {
-    border: 2px solid #ccc;
+  border: 2px solid #ccc;
 }
 
 .k-step-link .k-icon {
-    font-size: 24px;
-    color: #000;
+  font-size: 24px;
+  color: #000;
 }
 
 .k-step-link .step-label {
-    color: #75240d;
-    font-weight: bold;
+  color: #75240d;
+  font-weight: bold;
 }
 
 .reviews {
-    width: 100%;
-    padding: 30px 20px 20px 20px;
+  width: 100%;
+  padding: 30px 20px 20px 20px;
+}
+
+.header-area {
+  height: 300px;
 }
 
 .k-card {
-    margin: 0 15px;
-    border-color: rgb(197, 197, 197) !important;
+  margin: 0 15px;
+  border-color: rgb(197, 197, 197) !important;
 }
 .k-card-media {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .k-card-body {
-    border-top: 1px solid rgb(197, 197, 197) !important;
+  border-top: 1px solid rgb(197, 197, 197) !important;
 }
 
 .header-top {
-    border-bottom: 1px solid rgb(198, 198, 198);
+  border-bottom: 1px solid rgb(198, 198, 198);
+  background-color: var(--tb-color-palette-crisp-white);
 }

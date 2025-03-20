@@ -13,20 +13,22 @@ function NavBar() {
       <div className='p-[10px] header-top flex justify-center'>
 <div className='logo flex m-[20px]'>
 <GiPickle />
-<span className='font-[Mouse_Memoirs] text-4xl'>Pickle-Resource</span>
+<span className='font-[Mouse_Memoirs] text-4xl'>Pickle Resource</span>
 </div>
-<Button 
+<div className='pt-[20px]'><Button 
+  fillMode='solid'
+  className='button-pr'
   togglable={true} 
   selected={isDarkMode} 
   onClick={() => setIsDarkMode(!isDarkMode)} 
-  themeColor={isDarkMode ? 'dark' : 'light'}>
+  themeColor={isDarkMode ? 'dark' : 'base'}>
     <SvgIcon 
       icon={brightnessContrastIcon}  /> 
                   {isDarkMode ? 'Light Mode' : 'Dark Mode'}
               </Button>
               
              
-              </div>
+              </div></div>
     </>
   )
 }
