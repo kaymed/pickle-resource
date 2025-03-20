@@ -9,6 +9,11 @@
   border: 1px solid gray;
 }
 
+.dark .header-top {
+  background-color: #232947;
+  color: #fff;
+}
+
 .dark .k-drawer-content,
 .dark .custom-toolbar {
   background-color: #232947;
@@ -125,7 +130,6 @@
 }
 
 .k-card {
-  margin: 0 15px;
   border-color: rgb(197, 197, 197) !important;
 }
 .k-card-media {
@@ -139,4 +143,31 @@
 .header-top {
   border-bottom: 1px solid rgb(198, 198, 198);
   background-color: var(--tb-color-palette-crisp-white);
+}
+
+.k-menu .menu-chip {
+  background-color: #d8d8d8 !important;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.k-menu .menu-chip:hover,
+.k-menu .menu-chip:focus {
+  background-color: var(--tb-color-palette-purple-court) !important;
+  color: #fff !important;
+  border-color: #333;
+}
+.k-menu .menu-chip:hover svg,
+.k-menu .menu-chip:focus svg {
+  color: #fff !important;
+}
+.k-menu .menu-chip svg {
+  color: #333;
+}
+
+.step-section {
+  min-height: 300px;
 }

@@ -11,14 +11,16 @@ function Header() {
         
   return (
     <>
+    
     <motion.div 
     initial={{ 
       transform: "translateY(-20px)",
       opacity: 0
+      
 
      }}
     animate={{ transform: "translateY(0px)", opacity: 1 }}
-    transition={{ type: "spring" }}>
+    transition={{ type: "spring", delay: .5 }}>
     <div className='text-center mt-[40px]'>
     <StackLayout orientation="vertical" align={{
             vertical: 'top'

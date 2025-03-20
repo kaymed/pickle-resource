@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ChipList } from '@progress/kendo-react-buttons';
-import { GridLayout } from '@progress/kendo-react-layout';
+import { CardSubtitle, GridLayout, GridLayoutItem } from '@progress/kendo-react-layout';
+import { Card, CardHeader } from '@progress/kendo-react-layout';
 
 export default function Homepage() {
     const entries = [{
@@ -19,32 +20,34 @@ export default function Homepage() {
   return (
     <>
     <div className='p-[10px] flex justify-center'>
-    <div className='w-[300px]'>
-    <GridLayout align={'horizontal'} 
-    rows={[{
-            height: 90
-          }]} 
-    cols={[{
-            width: 90
-          }, {
-            width: 90
-          }, {
-            width: 90
-          }]} gap={{
-            rows: 40,
-            cols: 1
-          }}>
+    <div className='w-[650px]'>
+    <GridLayout align={'horizontal'} >
             
       <ChipList 
+      className='entry-chips'
   defaultData={entries} 
   selection="multiple" />
-    <ChipList 
-  defaultData={entries} 
-  selection="multiple" />
-  <ChipList 
-  defaultData={entries} 
-  selection="multiple" />
+   
     </GridLayout>
+
+          <div className='resource-steps'>
+          <GridLayout align={'horizontal'} 
+   >
+          <GridLayoutItem>
+          <Card 
+          className='m-[20px]'>
+            <CardSubtitle>Step 1</CardSubtitle>
+          <CardHeader>HELLO</CardHeader>
+          </Card>
+          <Card
+          className='m-[20px]'>
+            <CardSubtitle>Step 1</CardSubtitle>
+          <CardHeader>HELLO</CardHeader>
+          </Card>
+          </GridLayoutItem>
+          
+          </GridLayout>
+          </div>
     </div></div>
     </>
   )

@@ -3,19 +3,30 @@ import { Button } from "@progress/kendo-react-buttons";
 import { SvgIcon } from '@progress/kendo-react-common';
 import { brightnessContrastIcon } from '@progress/kendo-svg-icons';
 import { GiPickle } from "react-icons/gi";
-
+import { motion } from 'motion/react';
 
 function NavBar() {
     const [isDarkMode, setIsDarkMode] = React.useState(false);
 
   return (
-    <>
+    <><div className={`${isDarkMode ? "dark" : ""}`}> 
+    <motion.div 
+    initial={{ 
+      transform: "translateY(-20px)",
+      opacity: 0
+      
+
+     }}
+    animate={{ transform: "translateY(0px)", opacity: 1 }}
+    transition={{ type: "spring", delay: 0 }}>
+
       <div className='p-[10px] header-top flex justify-center'>
 <div className='logo flex m-[20px]'>
 <GiPickle />
 <span className='font-[Mouse_Memoirs] text-4xl'>Pickle Resource</span>
 </div>
-<div className='pt-[20px]'><Button 
+<div className='pt-[20px]'>
+  <Button 
   fillMode='solid'
   className='button-pr'
   togglable={true} 
@@ -28,7 +39,7 @@ function NavBar() {
               </Button>
               
              
-              </div></div>
+              </div></div></motion.div></div>
     </>
   )
 }
