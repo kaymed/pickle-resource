@@ -1,5 +1,6 @@
 import React from 'react';
 
+import GoBack from '../components/GoBack';
 import proton from '../assets/images/paddle-1.png';
 import grbx from '../assets/images/paddle-2.png';
 import crbn from '../assets/images/paddle-3.png';
@@ -10,13 +11,14 @@ function Paddles() {
     
   return (
     <>
-    <div className='m-[20px]'>
-<Typography.h4> 
+    <GoBack />
+    <div id="paddles" className='m-[20px] w-[800px] flex flex-col'>
+<h1> 
   Pick your paddle
-</Typography.h4>
+</h1>
     <p>Your perfect game starts with the perfect paddle. </p>
-</div>
-    <div id="paddles" className='flex p-[20px]'>
+
+    <div className='flex'>
 
 <div className="flex flex-row m-[10px] items-center">
 <PaddleItem 
@@ -38,7 +40,7 @@ function Paddles() {
     p="Pro Ultimate Power 14mm"
 
 />
-
+</div>
     </div>
     </div>
     </>

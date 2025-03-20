@@ -7,7 +7,7 @@ import { StackLayout } from '@progress/kendo-react-layout';
 
 import { motion } from "motion/react"
 
-function Header() {
+function Hero() {
         
   return (
     <>
@@ -44,9 +44,7 @@ function Header() {
                      </div>
 
                   <div> 
-                    <Button
-                      className='button-pr mt-[20px]'
-                      size={'large'}>Get Started</Button>
+                    
                   </div> 
                 </StackLayout>
             </StackLayout>
@@ -59,5 +57,5 @@ function Header() {
   )
 }
 
-export default Header
+export default Hero
  

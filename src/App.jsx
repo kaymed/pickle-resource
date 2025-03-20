@@ -2,12 +2,12 @@ import React from 'react';
 import './custom.css';
 import '@progress/kendo-theme-default/dist/all.css';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, Router, BrowserRouter } from 'react-router-dom';
 import NavBar from './sections/NavBar'
+import Paddles from './sections/Paddles';
+import Coaches from './sections/Coaches';
 import Homepage from './sections/Homepage';
-import StepSection from './sections/StepSection';
-
-import Header from './sections/Header';
+import Tournaments from './sections/Tournaments'
 import Footer from './sections/Footer';
 
 
@@ -19,12 +19,14 @@ function App() {
   <div className={`${isDarkMode ? "dark" : ""}`}>    
     <NavBar />
           <div className={`${isDarkMode ? "dark" : ""}`}> 
-          <div className='m-[30px] flex header-area'><Header/></div>
-    
-    
-    <div className='m-[100px] flex justify-center step-section'>
-          <StepSection />
-          </div>
+    <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/paddles" element={<Paddles />} />
+        <Route path="/coaches" element={<Coaches />} />
+        <Route path="/tournaments" element={<Tournaments />} />
+        </Routes>
+    </BrowserRouter>
         </div>
 </div>
 

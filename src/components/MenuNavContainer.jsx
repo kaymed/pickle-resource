@@ -2,12 +2,13 @@ import * as React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Menu, MenuItem } from '@progress/kendo-react-layout';
 import { motion } from 'motion/react';
-import { Card } from '@progress/kendo-react-layout';
-import { Chip } from '@progress/kendo-react-buttons';
 
+import '@progress/kendo-theme-default/dist/all.css';
 import { pencilIcon, tellAFriendIcon, calendarIcon, heartIcon} from '@progress/kendo-svg-icons';
 
-const MenuNavContainer = props => {
+
+export const MenuNavContainer = props => {
+  
   const navigate = useNavigate();
   const onSelect = event => {
     navigate(event.item.data.route);
@@ -21,13 +22,15 @@ const MenuNavContainer = props => {
      }}
     animate={{ transform: "translateY(0px)", opacity: 1 }}
     transition={{ type: "spring", delay: 1 }}>
-            <div className='mb-[50px] justify-center flex'><Menu onSelect={onSelect}>
-               <MenuItem 
+            <div className='mb-[50px] justify-center flex'>
+              
+              <Menu onSelect={onSelect}>
+              <MenuItem 
                   text="Paddles"
                   svgIcon={pencilIcon} 
                   cssClass='menu-chip'
                   data={{
-                    route: '/paddles'
+                    route: '../sections/Paddles.jsx'
                      }} />
                 <MenuItem 
                   text="Coaches" 
@@ -52,7 +55,6 @@ const MenuNavContainer = props => {
                      }} />
             </Menu>
             </div>
-           <motion.div><Card><div>{props.children}</div></Card> </motion.div>
             </motion.div>
         </>;
 };

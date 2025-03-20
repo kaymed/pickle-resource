@@ -1,11 +1,13 @@
 import React from 'react'
 import { Typography } from '@progress/kendo-react-common'
 import Grid from '../components/Grid'
+import GoBack from '../components/GoBack'
 
 export default function Tournaments() {
   return (
     
     <>
+    <GoBack />
     <div className='tourney-content p-[30px]'>
    <Typography.h4>
     Ready for a tournament?

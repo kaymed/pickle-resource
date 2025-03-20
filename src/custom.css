@@ -126,7 +126,7 @@
 }
 
 .header-area {
-  height: 300px;
+  height: 250px;
 }
 
 .k-card {
@@ -168,6 +168,11 @@
   color: #333;
 }
 
-.step-section {
-  min-height: 300px;
+.section-sel .k-button-text,
+.section-sel svg {
+  font-size: 20px;
+}
+
+#paddles {
+  background-color: #fff;
 }

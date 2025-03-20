@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { Stepper, Step } from '@progress/kendo-react-layout';
 import { Typography } from '@progress/kendo-react-common';
+import GoBack from '../components/GoBack'
+
+<GoBack />
 
 const stepsWithEmoji = [{
   label: 'Happy',
