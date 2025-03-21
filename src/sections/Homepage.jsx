@@ -25,7 +25,7 @@ export default function Homepage() {
 
      }}
     animate={{ transform: "translateY(0px)", opacity: 1 }}
-    transition={{ type: "spring", delay: .5 }}>
+    transition={{ type: "spring", delay: .3 }}>
 
 <div className='k-card-deck'>
 
@@ -37,7 +37,7 @@ export default function Homepage() {
       >
         <CardBody>
             <CardTitle><h1 className='text-[30px]'>🏓 Find your paddle</h1></CardTitle>
-                <p className='text-lg'>Trying to find the perfect paddle? Use our quiz to help you in your search! </p>
+                <p className='text-lg'>Trying to find the perfect paddle? Take a look at our top recommendations. </p>
         </CardBody>
         <CardActions>
         <Button 

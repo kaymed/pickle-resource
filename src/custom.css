@@ -22,7 +22,8 @@
   color: #fff;
 }
 
-.dark .k-drawer {
+.dark #coaches,
+.dark #paddles {
   background-color: #293677;
 }
 
@@ -32,7 +33,10 @@
 .dark .custom-toolbar,
 .dark .k-drawer-item .k-item-text,
 .dark .k-h5,
-.dark h1 {
+.dark h1,
+.dark #coaches .k-card p,
+.dark #paddles .k-card p,
+.dark #paddles .k-card h2 {
   color: #fff;
 }
 
@@ -178,10 +182,6 @@
   font-size: 15px;
 }
 
-#paddles {
-  background-color: #fff;
-}
-
 .grid-tourneys .k-button-flat-primary {
   background-color: var(--tb-color-palette-sky-blue);
   color: var(--tb-color-palette-sky-blue) !important;
@@ -189,4 +189,11 @@
 
 .grid-tourneys .k-button-flat-primary {
   color: var(--tb-color-palette-sky-blue) !important;
+}
+
+.grid-tourneys .k-input-solid:focus,
+.grid-tourneys .k-input-solid:hover,
+.grid-tourneys .k-input-solid:focus-within,
+.grid-tourneys .k-input-solid:active {
+  border-color: var(--tb-color-palette-sky-blue) !important;
 }

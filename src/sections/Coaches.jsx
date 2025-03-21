@@ -7,7 +7,7 @@ import { Button } from '@progress/kendo-react-buttons';
 import { Card, CardHeader, CardTitle, CardBody, CardImage, CardActions, CardSubtitle } from '@progress/kendo-react-layout';
 import { Rating } from '@progress/kendo-react-inputs';
 import { heartIcon } from '@progress/kendo-svg-icons';
-
+import { motion } from 'motion/react';
 import { Dialog, DialogActionsBar } from '@progress/kendo-react-dialogs';
 
 import { Typography } from '@progress/kendo-react-common';
@@ -24,7 +24,16 @@ export default function Coaches() {
   return (
     
     <>
-    
+    <motion.div 
+    initial={{ 
+      transform: "translateY(-20px)",
+      opacity: 0
+      
+
+     }}
+    animate={{ transform: "translateY(0px)", opacity: 1 }}
+    transition={{ type: "spring", delay: .3 }}>
+    <div id="coaches">
     <GoBack />
     <Card
         className='m-[20px]'
@@ -50,8 +59,8 @@ export default function Coaches() {
         <Card 
         orientation="horizontal" 
         style={{
-            width: 400,
-            minHeight: 350
+            width: 420,
+            minHeight: 400
     }}>
             <CardImage src={coachOne} />
                 <div className="k-vbox">
@@ -60,6 +69,11 @@ export default function Coaches() {
                            <CardSubtitle style={{ fontWeight: 500, fontSize: 15}}>$90 for weekly lessons</CardSubtitle>
                         </CardHeader>
                         <CardBody>
+                            <p>
+                            🎓 7 years playing <br />
+                            🔥97 Lessons<br />
+                            🥇 Tournament Competitor
+                            </p>
                             <p>
                             Meet the versatile coach who has made a name for himself in the world of Pickleball!  
                             Get ready to experience lightning in a bottle with this dynamic coach! </p>
@@ -70,7 +84,7 @@ export default function Coaches() {
             {visible && <div className='flex justify-center'>
                 <Dialog 
                 id='1'
-                     width={300} height={350}
+                     width={400} height={350}
                     title={'Learn with Coach Bob'} 
                     onClose={toggleDialog}>
                         <p style={{ margin: '10px 0' }}><strong>Levels taught:<br /></strong>
@@ -97,8 +111,8 @@ export default function Coaches() {
                 <Card 
         orientation="horizontal" 
         style={{
-            width: 400,
-            minHeight: 350
+            width: 420,
+            minHeight: 400
     }}>
             <CardImage src={coachTwo} />
                 <div className="k-vbox">
@@ -107,6 +121,12 @@ export default function Coaches() {
                            <CardSubtitle style={{ fontWeight: 500, fontSize: 15}}>$80 for weekly lessons</CardSubtitle>
                         </CardHeader>
                         <CardBody>
+                        <p>
+                            🎓 5 years playing <br />
+                            🔥80 Lessons<br />
+                            🥇 Tournament Competitor / Winner
+                            </p>
+                           
                             <p>
                             PPR certified Pickleball coach with years of experience teaching the game she loves! 
                             Kate's mission is to guide you in honing your skills, both on the physical and mental fronts.
@@ -114,7 +134,7 @@ export default function Coaches() {
                              </p>
                         <CardActions>
                         <Button>
-                View Stats
+                Contact
             </Button>
             
                         </CardActions>
@@ -127,8 +147,8 @@ export default function Coaches() {
                 <Card 
         orientation="horizontal" 
         style={{
-            width: 400,
-            minHeight: 350
+            width: 420,
+            minHeight: 400
     }}>
             <CardImage src={coachThree} />
                 <div className="k-vbox">
@@ -137,11 +157,16 @@ export default function Coaches() {
                            <CardSubtitle style={{ fontWeight: 500, fontSize: 15}}>$75 for weekly lessons</CardSubtitle>
                         </CardHeader>
                         <CardBody>
+                        <p>
+                            🎓 2 years playing <br />
+                            🔥10 Lessons<br />
+                            🥇 Tournament Winner
+                            </p>
                             <p>
                             Albert brings a unique blend of passion and expertise to his pickleball coaching, 
-                            having transitioned from a college tennis background to a love for pickleball in 2018. 
+                            having transitioned from a college tennis background. 
                             He’s excited to share his 
-                            enthusiasm for pickleball with players of all ages and skill levels.</p>
+                            enthusiasm for pickleball with players of all types.</p>
                         <CardActions>
                         <Button>
                 Contact
@@ -158,6 +183,8 @@ export default function Coaches() {
 
 </div>    
     </div>
+    </div>
+    </motion.div>
     </>
   )
 }

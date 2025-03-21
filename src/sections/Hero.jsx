@@ -20,7 +20,7 @@ function Hero() {
 
      }}
     animate={{ transform: "translateY(0px)", opacity: 1 }}
-    transition={{ type: "spring", delay: .5 }}>
+    transition={{ type: "spring", delay: .3 }}>
     <div className='text-center mt-[40px]'>
     <StackLayout orientation="vertical" align={{
             vertical: 'top'
