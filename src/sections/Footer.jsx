@@ -12,7 +12,7 @@ export default function Footer() {
                            
     <div className='justify-center'>
      <p>
-      Made with ❤️ by Kay M.
+      Made with ❤️ by Kay Pickleball Group
       </p>
    </div>
   
