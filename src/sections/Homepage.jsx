@@ -8,6 +8,7 @@ import '@progress/kendo-theme-default/dist/all.css';
 import { motion } from 'motion/react';
 import { Card, CardBody, CardTitle, CardActions } from '@progress/kendo-react-layout';
 
+
 export default function Homepage() {
   const navigate = useNavigate();
   
@@ -29,12 +30,16 @@ export default function Homepage() {
 
 <div className='k-card-deck'>
 
-<Card 
+<motion.div
+   whileHover={{ scale: 1.05 }} >
+    
+    <Card 
     style={{
         width: 290
       }}
 
       >
+        
         <CardBody>
             <CardTitle><h1 className='text-[30px]'>🏓 Find your paddle</h1></CardTitle>
                 <p className='text-lg'>Trying to find the perfect paddle? Take a look at our top recommendations. </p>
@@ -45,17 +50,14 @@ export default function Homepage() {
                 svgIcon={pencilIcon} 
                 className='button-pr section-sel'
                 onClick={() => navigate('/paddles')}>
-                    Take Quiz
+                    View
                 </Button>
         </CardActions>
-                </Card>
-
+                </Card></motion.div>
+                <motion.div
+   whileHover={{ scale: 1.05 }} >
                 <Card 
-    style={{
-        width: 290
-      }}
-
-      >
+                style={{   width: 290 }}>
         <CardBody>
             <CardTitle><h1 className='text-[30px]'>🎓Meet your coach</h1></CardTitle>
                 <p className='text-lg'>Take a look at our recommendations for coaches in the area. </p>
@@ -70,7 +72,9 @@ export default function Homepage() {
                 </Button>
         </CardActions>
                 </Card>
-
+                </motion.div>
+                <motion.div
+   whileHover={{ scale: 1.05 }} >
                 <Card 
     style={{
         width: 290
@@ -92,6 +96,7 @@ export default function Homepage() {
                 
         </CardActions>
                 </Card>
+                </motion.div>
                 
      </div>          
            </motion.div>

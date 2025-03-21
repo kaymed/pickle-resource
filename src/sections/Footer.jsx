@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar, AppBarSection} from '@progress/kendo-react-layout';
+import { AppBar} from '@progress/kendo-react-layout';
 
 export default function Footer() {
   return (
