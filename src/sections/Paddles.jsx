@@ -31,7 +31,7 @@ function Paddles() {
     <p className='text-lg'>Your perfect game starts with the perfect paddle. </p>
     </div></Card>
 
-<div className="flex flex-row items-center">
+<div className='k-card-deck justify-center pb-[50px]'>
 <PaddleItem 
     src={proton}
     h3="Proton"
@@ -53,11 +53,10 @@ function Paddles() {
     desc="🔥 Massive sweet spot for all-over response"
 />
 </div>
-    </div>
-   
+</div>
     </motion.div>
     </>
   )
 }
 
-export default Paddles
+export default Paddles;
