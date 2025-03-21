@@ -12,7 +12,10 @@ const App = () => {
   };
   return <Grid style={{
     height: '500px'
-  }} data={data} dataItemKey="ProductID" autoProcessData={true} sortable={true} pageable={true} filterable={true} editable={{
+  }}
+  className='grid-tourneys' 
+  edit={false}
+  data={data} dataItemKey="ProductID" autoProcessData={true} sortable={true} pageable={true} filterable={true} editable={{
     mode: 'incell'
   }} defaultSkip={0} defaultTake={10} onItemChange={handleItemChange}>
             <Column field="ProductID" title="ID" editable={false} filterable={false} width="75px" />

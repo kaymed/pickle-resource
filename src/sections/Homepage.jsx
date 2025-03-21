@@ -16,7 +16,7 @@ export default function Homepage() {
           <div className='p-[30px] flex header-area'>
             <Hero />
             </div>
-<div className='flex justify-center intro-section'>
+<div className='flex justify-center intro-section pb-[40px]'>
 <motion.div 
     initial={{ 
       transform: "translateY(-20px)",
@@ -25,7 +25,7 @@ export default function Homepage() {
 
      }}
     animate={{ transform: "translateY(0px)", opacity: 1 }}
-    transition={{ type: "spring", delay: .75 }}>
+    transition={{ type: "spring", delay: .5 }}>
 
 <div className='k-card-deck'>
 
@@ -36,8 +36,8 @@ export default function Homepage() {
 
       >
         <CardBody>
-            <CardTitle><h1 className='text-[30px]'>Find your paddle</h1></CardTitle>
-                <p className='text-lg'>Trying to find the perfect paddle? </p>
+            <CardTitle><h1 className='text-[30px]'>🏓 Find your paddle</h1></CardTitle>
+                <p className='text-lg'>Trying to find the perfect paddle? Use our quiz to help you in your search! </p>
         </CardBody>
         <CardActions>
         <Button 
@@ -45,7 +45,7 @@ export default function Homepage() {
                 svgIcon={pencilIcon} 
                 className='button-pr section-sel'
                 onClick={() => navigate('/paddles')}>
-                    Find Your Paddle
+                    Take Quiz
                 </Button>
         </CardActions>
                 </Card>
@@ -57,7 +57,7 @@ export default function Homepage() {
 
       >
         <CardBody>
-            <CardTitle><h1 className='text-[30px]'>Meet your coach</h1></CardTitle>
+            <CardTitle><h1 className='text-[30px]'>🎓Meet your coach</h1></CardTitle>
                 <p className='text-lg'>Take a look at our recommendations for coaches in the area. </p>
         </CardBody>
         <CardActions>
@@ -78,7 +78,7 @@ export default function Homepage() {
 
       >
         <CardBody>
-            <CardTitle><h1 className='text-[30px]'>Nearby Tournaments</h1></CardTitle>
+            <CardTitle><h1 className='text-[30px]'>🥇 Nearby Tournaments</h1></CardTitle>
                 <p className='text-lg'>Test your skills in tournaments to up your DUPR rating. </p>
         </CardBody>
         <CardActions>

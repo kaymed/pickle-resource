@@ -182,6 +182,11 @@
   background-color: #fff;
 }
 
-.intro-section {
-  margin-bottom: 40px;
+.grid-tourneys .k-button-flat-primary {
+  background-color: var(--tb-color-palette-sky-blue);
+  color: var(--tb-color-palette-sky-blue) !important;
+}
+
+.grid-tourneys .k-button-flat-primary {
+  color: var(--tb-color-palette-sky-blue) !important;
 }
