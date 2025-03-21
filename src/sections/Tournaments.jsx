@@ -1,14 +1,15 @@
 import React from 'react'
 import { Typography } from '@progress/kendo-react-common'
-import Grid from '../components/Grid'
+import TournamentGrid from '../components/TournamentGrid'
 import GoBack from '../components/GoBack'
+import { Card } from '@progress/kendo-react-layout'
 
 export default function Tournaments() {
   return (
     
     <>
     <GoBack />
-    <div className='tourney-content p-[30px]'>
+   <Card className='m-[20px]'> <div className='tourney-content p-[30px]'>
    <Typography.h4>
     Ready for a tournament?
    </Typography.h4>
@@ -16,11 +17,11 @@ export default function Tournaments() {
     area below. You can filter the tournaments via tournament type, such as Men's, Women's and so forth.
    </p>
 
-   <Grid />
+   <TournamentGrid />
 
                         
 </div>
-   
+</Card>
     </>
   )
 }

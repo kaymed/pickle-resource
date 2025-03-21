@@ -7,7 +7,7 @@ export default function GoBack() {
     const navigate = useNavigate();
 
   return (
-    <div className='p-[10px]'>
+    <div className='p-[20px]'>
       <Button
       onClick={() => navigate(-1)}
       className="button-pr"
