@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Grid, GridColumn as Column } from '@progress/kendo-react-grid';
-import tournaments from './TournamentData';
+import tournaments from '../library/TournamentData';
 const App = () => {
   const [data, setData] = useState(tournaments);
   const handleItemChange = event => {

@@ -10,13 +10,16 @@
 }
 
 .dark .header-top {
-  background-color: #232947;
+  background-color: #1c2656;
   color: #fff;
 }
 
 .dark .k-drawer-content,
-.dark .custom-toolbar {
-  background-color: #232947;
+.dark .custom-toolbar,
+.dark .header-area,
+.dark .intro-section {
+  background-color: #1c2656;
+  color: #fff;
 }
 
 .dark .k-drawer {
@@ -28,7 +31,8 @@
 .dark .k-svg-icon,
 .dark .custom-toolbar,
 .dark .k-drawer-item .k-item-text,
-.dark .k-h5 {
+.dark .k-h5,
+.dark h1 {
   color: #fff;
 }
 
@@ -126,11 +130,12 @@
 }
 
 .header-area {
-  height: 250px;
+  height: 280px;
 }
 
 .k-card {
   border-color: rgb(197, 197, 197) !important;
+  box-shadow: none;
 }
 .k-card-media {
   background-color: #fff;
@@ -170,9 +175,13 @@
 
 .section-sel .k-button-text,
 .section-sel svg {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #paddles {
   background-color: #fff;
+}
+
+.intro-section {
+  margin-bottom: 40px;
 }

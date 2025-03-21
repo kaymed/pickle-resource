@@ -47,4 +47,5 @@ body {
   height: 100vh;
   background-color: #f3f3f3;
   min-height: 100vh;
+  font-weight: 500;
 }
