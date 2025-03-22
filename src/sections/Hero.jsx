@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import '../index.css';
-import Profile from '../components/Profile'
 
-import { Button } from '@progress/kendo-react-buttons';
 import { StackLayout } from '@progress/kendo-react-layout';
 
 import { motion } from "motion/react"
