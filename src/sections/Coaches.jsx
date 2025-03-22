@@ -3,6 +3,8 @@ import React from 'react'
 import coachOne from '../assets/images/pb-male-ic.png';
 import coachTwo from '../assets/images/pb-female-ic.png';
 import coachThree from '../assets/images/pb-male2.png';
+
+import Reviews from './Reviews'
 import { Button } from '@progress/kendo-react-buttons';
 import { Card, CardHeader, CardTitle, CardBody, CardImage, CardActions, CardSubtitle } from '@progress/kendo-react-layout';
 import { Rating } from '@progress/kendo-react-inputs';
@@ -184,6 +186,10 @@ export default function Coaches() {
 </div>    
     </div>
     </div>
+    <Card
+  className="m-[20px]">
+<Reviews />
+</Card>
     </motion.div>
     </>
   )

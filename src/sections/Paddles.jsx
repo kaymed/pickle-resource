@@ -1,7 +1,7 @@
 import React from 'react';
 
 import GoBack from '../components/GoBack';
-
+import Reviews from '../sections/Reviews'
 import { Card } from '@progress/kendo-react-layout';
 import { motion } from 'motion/react';
 import proton from '../assets/images/paddle-1.png';
@@ -54,6 +54,10 @@ function Paddles() {
 />
 </div>
 </div>
+<Card
+  className="m-[20px]">
+<Reviews />
+</Card>
     </motion.div>
     </>
   )
