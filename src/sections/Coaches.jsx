@@ -80,7 +80,10 @@ export default function Coaches() {
                             Meet the versatile coach who has made a name for himself in the world of Pickleball!  
                             Get ready to experience lightning in a bottle with this dynamic coach! </p>
                         <CardActions>
-                        <Button type="button" onClick={toggleDialog} id="1">
+                        <Button 
+                        type="button" 
+                        onClick={toggleDialog} 
+                        className='button-pr'>
                 View Stats
             </Button>
             {visible && <div className='flex justify-center'>
@@ -98,7 +101,10 @@ export default function Coaches() {
                     <br />64</p>
                     <p>Average Rating:<br/><Rating defaultValue={4} svgIcon={heartIcon} svgIconOutline={heartIcon} /></p>
                     <DialogActionsBar>
-                        <Button type="button" onClick={toggleDialog}>
+                        <Button 
+                        type="button" 
+                        onClick={toggleDialog}
+                        className='button-pr'>
                             Contact
                         </Button>
                     </DialogActionsBar>
@@ -135,7 +141,7 @@ export default function Coaches() {
                             
                              </p>
                         <CardActions>
-                        <Button>
+                        <Button className='button-pr'>
                 Contact
             </Button>
             
@@ -170,7 +176,7 @@ export default function Coaches() {
                             He’s excited to share his 
                             enthusiasm for pickleball with players of all types.</p>
                         <CardActions>
-                        <Button>
+                        <Button className='button-pr'>
                 Contact
             </Button>
                         </CardActions>

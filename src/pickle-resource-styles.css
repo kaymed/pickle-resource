@@ -45703,4 +45703,5 @@ kendo-scrollview.k-scrollview .k-scrollview-nav {
 .button-pr.k-button.k-button-solid-base:hover {
     color: var(--tb-color-palette-crisp-white);
     background-color: var(--tb-color-palette-purple-court);
+    border-color: var(--tb-color-palette-purple-court) !important;
 }
