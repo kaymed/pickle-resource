@@ -61,7 +61,7 @@ export default function Coaches() {
         <Card 
         orientation="horizontal" 
         style={{
-            width: 420,
+            width: 400,
             minHeight: 400
     }}>
             <CardImage src={coachOne} />
@@ -119,7 +119,7 @@ export default function Coaches() {
                 <Card 
         orientation="horizontal" 
         style={{
-            width: 420,
+            width: 400,
             minHeight: 400
     }}>
             <CardImage src={coachTwo} />
@@ -155,7 +155,7 @@ export default function Coaches() {
                 <Card 
         orientation="horizontal" 
         style={{
-            width: 420,
+            width: 400,
             minHeight: 400
     }}>
             <CardImage src={coachThree} />
