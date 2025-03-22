@@ -144,6 +144,11 @@
   background-color: var(--tb-color-palette-sky-blue) !important;
 }
 
+.k-stepper .k-step-current .k-step-indicator,
+.k-stepper {
+  cursor: pointer;
+}
+
 .k-card {
   border-color: rgb(197, 197, 197) !important;
   box-shadow: none;
@@ -203,4 +208,8 @@
 .grid-tourneys .k-input-solid:focus-within,
 .grid-tourneys .k-input-solid:active {
   border-color: var(--tb-color-palette-sky-blue) !important;
+}
+
+:root {
+  --kendo-color-primary: var(--tb-color-palette-sky-blue) !important;
 }
