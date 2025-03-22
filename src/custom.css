@@ -137,6 +137,13 @@
   height: 325px;
 }
 
+.k-stepper .k-step-current .k-step-indicator,
+.k-stepper .k-step-done .k-step-indicator {
+  border-color: var(--tb-color-palette-sky-blue) !important;
+  color: var(--kendo-color-on-primary, #ffffff);
+  background-color: var(--tb-color-palette-sky-blue) !important;
+}
+
 .k-card {
   border-color: rgb(197, 197, 197) !important;
   box-shadow: none;

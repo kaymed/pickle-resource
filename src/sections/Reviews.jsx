@@ -1,24 +1,23 @@
 import * as React from 'react';
 import { Stepper, Step } from '@progress/kendo-react-layout';
-import { Typography } from '@progress/kendo-react-common';
 import GoBack from '../components/GoBack'
 
 <GoBack />
 
-const stepsWithEmoji = [{
-  label: 'Happy',
-  emoji: '😀'
+const loveSteps = [{
+  label: 'Good job!',
+  emoji: '👍🏻'
 }, {
-  label: 'Angry',
-  emoji: '😠'
+  label: 'Grateful',
+  emoji: '😊'
 }, {
-  label: 'Cool',
-  emoji: '😎'
+  label: 'Super Cool!',
+  emoji: '🆒'
 }, {
   label: 'Love',
-  emoji: '😍'
+  emoji: '🤟🏼'
 }];
-const StepWithEmoji = props => {
+const LoveSteps = props => {
   return <Step {...props}>
         <span className="k-step-indicator" aria-hidden="true">
           <span className="emoji">{props.emoji}</span>
@@ -29,19 +28,24 @@ const StepWithEmoji = props => {
       </Step>;
 };
 const App = () => {
-  const [value, setValue] = React.useState(2);
+  const [value, setValue] = React.useState(0);
   const handleChange = e => {
     setValue(e.value);
   };
   return <React.Fragment>
         <div className="reviews">
-          <Typography.h4>Leave us some love!</Typography.h4>
-          <p>
+          <h2 className="text-3xl">Leave us some love!</h2>
+          <p className='text-lg mt-[10px] mb-[20px]'>
             Did you find something useful in this guide? Well, great! We're happy to help.
             Let us know how you feel below. (Please be nice.)
           </p>
           <div className='p-[10px]'></div>
-          <Stepper className="emoji-stepper" value={value} onChange={handleChange} items={stepsWithEmoji} item={StepWithEmoji} />
+          <Stepper 
+          className="love-stepper" 
+          value={value} 
+          onChange={handleChange} 
+          items={loveSteps} 
+          item={LoveSteps} />
         </div>
        
        

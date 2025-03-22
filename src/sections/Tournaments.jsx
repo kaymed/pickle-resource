@@ -3,7 +3,7 @@ import TournamentGrid from '../components/TournamentGrid'
 import GoBack from '../components/GoBack'
 import { Card } from '@progress/kendo-react-layout'
 import { motion } from 'motion/react'
-
+import Reviews from './Reviews'
 
 export default function Tournaments() {
   return (
@@ -31,6 +31,11 @@ export default function Tournaments() {
 
                         
 </div>
+</Card>
+
+<Card
+  className="m-[20px]">
+<Reviews />
 </Card>
 </motion.div>
     </>
