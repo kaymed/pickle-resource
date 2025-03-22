@@ -36,17 +36,16 @@
 .dark h1,
 .dark #coaches .k-card p,
 .dark #paddles .k-card p,
-.dark #paddles .k-card h2 {
+.dark #paddles .k-card h2,
+.dark .k-card-body p,
+.dark .k-step-list-horizontal .k-step-label,
+.dark #coaches .k-card h2,
+.dark #coaches .k-card-subtitle {
   color: #fff;
 }
 
 .dark .k-drawer-separator {
   background-color: #656565;
-}
-
-.dark .k-card-body p,
-.dark .k-step-list-horizontal .k-step-label {
-  color: #fff;
 }
 
 .dark .k-card-header,
@@ -174,7 +173,10 @@
   font-size: 20px;
   margin: 0 10px;
 }
-
+.k-rating-item.k-selected:hover,
+.k-rating-item.k-selected.k-hover {
+  color: var(--tb-color-palette-purple-court) !important;
+}
 .k-menu .menu-chip:hover,
 .k-menu .menu-chip:focus {
   background-color: var(--tb-color-palette-purple-court) !important;

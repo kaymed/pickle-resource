@@ -35,7 +35,7 @@ export default function Coaches() {
      }}
     animate={{ transform: "translateY(0px)", opacity: 1 }}
     transition={{ type: "spring", delay: .3 }}>
-    <div id="coaches">
+    <div id="coaches" className='pb-[20px]'>
     <GoBack />
     <Card
         className='m-[20px]'
@@ -185,11 +185,11 @@ export default function Coaches() {
 
 </div>    
     </div>
-    </div>
-    <Card
-  className="m-[20px]">
+    <Card className="m-[20px]">
 <Reviews />
 </Card>
+    </div>
+    
     </motion.div>
     </>
   )
