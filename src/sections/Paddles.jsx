@@ -22,7 +22,7 @@ function Paddles() {
          }}
         animate={{ transform: "translateY(0px)", opacity: 1 }}
         transition={{ type: "spring", delay: .3 }}>
-          <div id='paddles'>
+          <div id='paddles' className='p-[20px]'>
     <GoBack />
     <Card className='m-[20px]'><div className='m-[20px]'>
 <h1 className='text-4xl mb-[10px]'> 
@@ -53,11 +53,12 @@ function Paddles() {
     desc="🔥 Massive sweet spot for all-over response"
 />
 </div>
-</div>
 <Card
   className="m-[20px]">
 <Reviews />
 </Card>
+</div>
+
     </motion.div>
     </>
   )

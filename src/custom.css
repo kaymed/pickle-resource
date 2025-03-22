@@ -23,7 +23,8 @@
 }
 
 .dark #coaches,
-.dark #paddles {
+.dark #paddles,
+.dark #tournaments {
   background-color: #293677;
 }
 
@@ -40,7 +41,11 @@
 .dark .k-card-body p,
 .dark .k-step-list-horizontal .k-step-label,
 .dark #coaches .k-card h2,
-.dark #coaches .k-card-subtitle {
+.dark #coaches .k-card-subtitle,
+.dark .tourney-content p,
+.dark .reviews p,
+.dark .reviews h2,
+.dark .k-stepper {
   color: #fff;
 }
 

@@ -18,6 +18,7 @@ export default function Tournaments() {
      }}
     animate={{ transform: "translateY(0px)", opacity: 1 }}
     transition={{ type: "spring", delay: .1 }}>
+      <div id="tournaments" className='p-[20px]'>
     <GoBack />
    <Card className='m-[20px]'> <div className='tourney-content p-[30px]'>
    <h1 className='text-4xl mb-[10px]'>
@@ -37,6 +38,7 @@ export default function Tournaments() {
   className="m-[20px]">
 <Reviews />
 </Card>
+</div>
 </motion.div>
     </>
   )
