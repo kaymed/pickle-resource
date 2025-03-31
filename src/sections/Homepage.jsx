@@ -14,7 +14,7 @@ export default function Homepage() {
   
   return (
     <>
-          <div className='p-[30px] flex header-area'>
+          <div className='flex header-area'>
             <Hero />
             </div>
 <div className='flex justify-center intro-section pb-[40px]'>
@@ -28,12 +28,20 @@ export default function Homepage() {
     animate={{ transform: "translateY(0px)", opacity: 1 }}
     transition={{ type: "spring", delay: .3 }}>
 
-<div className='k-card-deck'>
+<div 
+  className='k-card-deck'
+  style={{
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    flexWrap: 'wrap'
+}}>
+
 
 <motion.div
    whileHover={{ scale: 1.05 }} >
     
     <Card 
+    
     style={{
         width: 290
       }}

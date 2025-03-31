@@ -34,7 +34,7 @@ function Hero() {
                 <h1 className='font-[Mouse_Memoirs] text-6xl'>
                  Get started in pickleball today!
                  </h1>
-              <div className='pr-[250px] pl-[250px] pt-[20px] text-center'>
+              <div className='text-center hero-message'>
                  <p className='text-2xl'>Just joined the pickleball craze and can't get enough? 
                     Look no further! Use the guide below to find your next best paddle, a coach or a local
                     tournament to test your skills.

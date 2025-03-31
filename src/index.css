@@ -49,3 +49,13 @@ body {
   min-height: 100vh;
   font-weight: 500;
 }
+
+.hero-message {
+  padding: 20px 250px 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .hero-message {
+    padding: 20px;
+  }
+}
